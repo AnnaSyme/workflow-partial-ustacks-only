@@ -1,0 +1,97 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "Version 1",
+    "format-version": "0.1",
+    "name": "Partial de novo workflow: ustacks only",
+    "steps": {
+        "0": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [],
+            "label": null,
+            "name": "Input dataset collection",
+            "outputs": [],
+            "position": {
+                "bottom": 238.3125,
+                "height": 82.171875,
+                "left": 442.5,
+                "right": 642.5,
+                "top": 156.140625,
+                "width": 200,
+                "x": 442.5,
+                "y": 156.140625
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"collection_type\": \"list\"}",
+            "tool_version": null,
+            "type": "data_collection_input",
+            "uuid": "a6faae4a-faae-4eae-b8fe-72361730ec87",
+            "workflow_outputs": []
+        },
+        "1": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/stacks2_ustacks/stacks2_ustacks/2.55+galaxy3",
+            "errors": null,
+            "id": 1,
+            "input_connections": {
+                "input_type|fqinputs": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Stacks2: ustacks",
+            "outputs": [
+                {
+                    "name": "tabs",
+                    "type": "input"
+                },
+                {
+                    "name": "output_log",
+                    "type": "txt"
+                }
+            ],
+            "position": {
+                "bottom": 460.03125,
+                "height": 225.515625,
+                "left": 723.4375,
+                "right": 923.4375,
+                "top": 234.515625,
+                "width": 200,
+                "x": 723.4375,
+                "y": 234.515625
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/stacks2_ustacks/stacks2_ustacks/2.55+galaxy3",
+            "tool_shed_repository": {
+                "changeset_revision": "bb0475c884ff",
+                "name": "stacks2_ustacks",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"H\": \"false\", \"M\": \"2\", \"N\": null, \"R\": \"false\", \"add_log\": \"true\", \"assembly_options\": {\"keep_high_cov\": \"false\", \"d\": \"false\", \"high_cov_thres\": \"3.0\", \"max_locus_stacks\": \"3\", \"k_len\": null}, \"gapped\": {\"use_gapped\": \"yes\", \"__current_case__\": 1, \"max_gaps\": \"2.0\", \"min_aln_len\": \"0.8\"}, \"input_type\": {\"input_type_select\": \"single\", \"__current_case__\": 0, \"fqinputs\": {\"__class__\": \"ConnectedValue\"}}, \"m\": \"3\", \"processing_options\": {\"i\": \"1\"}, \"snp_options\": {\"select_model\": {\"model_type\": \"snp\", \"__current_case__\": 0, \"alpha\": \"0.05\"}}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "2.55+galaxy3",
+            "type": "tool",
+            "uuid": "f324b6cc-ea5a-40e7-a569-8e3d914cb617",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "tabs",
+                    "uuid": "9fd120ad-12b3-4de3-8afd-db04715e0a69"
+                },
+                {
+                    "label": null,
+                    "output_name": "output_log",
+                    "uuid": "f3a0f5b3-fd82-4c04-a006-6efef9c0b8f7"
+                }
+            ]
+        }
+    },
+    "tags": [],
+    "uuid": "c3e560b5-7b64-4789-96a7-6df65503e2e1",
+    "version": 1
+}
